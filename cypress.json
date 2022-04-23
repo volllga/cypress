@@ -1,1 +1,8 @@
-{}
+{
+  "baseUrl": "http://automationpractice.com/index.php",
+  "ignoreTestFiles": ["**/1-getting-started/*","**/2-advanced-examples/*"],
+  "watchForFileChanges": false,
+  "defaultCommandTimeout": 4000,
+  "viewportHeight": 768,
+  "viewportWidth": 1024
+}
