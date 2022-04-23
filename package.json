@@ -1,0 +1,22 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "Cypress pros:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volllga/cypress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/volllga/cypress/issues"
+  },
+  "homepage": "https://github.com/volllga/cypress#readme",
+  "devDependencies": {
+    "cypress": "^9.5.4"
+  }
+}
