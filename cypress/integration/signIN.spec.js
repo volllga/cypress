@@ -3,13 +3,13 @@ const wrongEmail = "bob_jonnygmail.com"
 describe("sign IN form", () => {
 
     it("CREATE AN ACCOUNT with valid email", () => {
-        cy.visit("/index.php?controller=authentication&back=my-account")
+        cy.visit("http://automationpractice.com/index.php?controller=authentication&back=my-account")
         cy.get('#email_create').type(email);
         cy.contains('Create an account').click();
     });
 
     it("CREATE AN ACCOUNT with invalid email", () => {
-        cy.visit("/index.php?controller=authentication&back=my-account")
+        cy.visit("http://automationpractice.com/index.php?controller=authentication&back=my-account")
         cy.get('#email_create').type(wrongEmail);
         cy.contains('Create an account').click();
 

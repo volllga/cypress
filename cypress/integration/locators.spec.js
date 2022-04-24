@@ -3,7 +3,7 @@
 describe("different locators", () => {
 
     before('code before all tests', () => {
-
+        cy.visit("http://automationpractice.com/index.php");
     })
 
     beforeEach('code before each test', () => {
@@ -14,10 +14,6 @@ describe("different locators", () => {
         cy.get(".button-search").click();
         cy.get("#search_query_top").click().clear()
     })
-
-    it('should go to the base URL', function () {
-        cy.visit("/");
-    });
 
     it("search by ID locator and class name", () => {
         cy.get("#search_query_top").type("first");

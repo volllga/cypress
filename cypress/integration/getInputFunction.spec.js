@@ -7,7 +7,7 @@ function getInput(locator, text) {
 describe("different locators", () => {
 
     beforeEach("before each test go to base URL", () => {
-        cy.visit("/");
+        cy.visit("http://automationpractice.com/index.php");
     })
 
     it("search on the main page", () => {
