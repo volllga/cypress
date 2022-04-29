@@ -1,4 +1,4 @@
-describe('then and wrap metods', () => {
+describe('then and wrap methods', () => {
 
     it('', () => {
         cy.visit('https://demoqa.com/');
