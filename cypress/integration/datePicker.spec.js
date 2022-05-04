@@ -4,11 +4,11 @@ Cypress.on('uncaught:exception', (err, runnable) => {
     return false
 })
 
-const date = new Date();
-const options = { day: '2-digit', month: 'long', year: 'numeric' };
-const today = new Intl.DateTimeFormat('en-AU', options).format(date);
-
 describe('data picker', () => {
+    const date = new Date();
+    const options = { day: '2-digit', month: 'long', year: 'numeric' };
+    const today = new Intl.DateTimeFormat('en-AU', options).format(date);
+
     it('get today (default) data', () => {
         console.log(today);
         cy.visit('https://demoqa.com/automation-practice-form');
